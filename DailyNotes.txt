@@ -1,0 +1,317 @@
+PCEP(Entry Level)	-->4 sections--> syntax,fundamentals(operators),conditional and looping,data structures,exceptions
+
+
+Python:
+==========
+
+Language:communication-->human
+
+	english,hindi,tamil,kannada,telugu...
+		
+Programming Langauage
+	communication-->machine
+	
+			laptop--software/application-->set of programs-->set of instructions
+			
+				keywords-->alphabets
+				syntax
+	
+			python,java,.net,c,c++,LISP,....
+		
+why python?
+			1991 feb 20th  1.0
+				guido van Russam
+		
+3.x
+3.11.
+3.15
+
+			easy and simple to learn 
+
+Welcome.java  --->55+ 
+class Welcome{
+public static void main(String args[])
+	{	
+	System.out.println("welcome to java ")
+	}
+}
+
+welcome to python    30+
+print("welcome to python")
+		english paper
+		AI/ML-->python
+
+	python-->1960-70  -->the complete monty python circus
+
+Guido
+1)functional programming  feature from C 
+2)oops features from C ++
+3)scripting language features from shellscript
+4)modular programming from modula-3
+
+	syntax :ABC,C
+
+Where we can use python:
+=====================
+1)desktop application-- notepad,antivirus,calculator-->core python+tkinter(GUI)
+2)web application--django,flask
+3)database application--pdbc
+4)networking programming
+5)games 
+6)ml
+7)IOT
+
+Features:
+=========
+1)simple and easy to learn 
+2)freesource  and open source(jython,cpython,ruby)
+3)pltform independent 
+4)portable 
+      2.523						2.533
+		py app 					
+	windows 11         linux
+5)dynamically typed
+6)interpreted  
+7)rich library
+						int a=123 static typed
+								a="123"
+
+
+							compailation ,execution
+					
+compiler -->compailation
+
+.....
+...... --->computer (0's 1's/binary )
+
+a=97 --1010100011
+b=98
+
+
+Identifiers:
+========
+it is a name ,variable name,classname,method name,obj name
+
+		a-z
+		A-Z
+		0-9
+		_
+
+
+variables
+			contactname--123456789
+							name=sandeep
+					String		name=sandeep 
+
+datatypes
+			int,float,bool,str,complex....fundamental datatypes
+			List,set,tuple,dict,frozenset--advanced DT
+keywords--35
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', '
+from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+type casting :
+==========
+			int(),float(),str(),complex(),bool()
+
+ import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> result=true
+Traceback (most recent call last):
+  File "<python-input-15>", line 1, in <module>
+    result=true
+           ^^^^
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> result=True
+>>> type(result)
+<class 'bool'>
+>>> value=2+3j
+>>> type(value)
+<class 'complex'>
+>>> orgname="kyndrl india"
+>>> orgname='kyndrl india'
+>>> type(orgname)
+<class 'str'>
+>>> print(orgname)
+kyndrl india
+>>> orgname='kyndrl "india"'
+>>> print(orgname)
+kyndrl "india"
+>>> orgname="kyndrl 'india'"
+>>> print(orgname)
+kyndrl 'india'
+>>> message='''am indian
+... am  from telanga
+... am from hyderabad'''
+>>> type(message)
+<class 'str'>
+>>> orgname="kyndrl india
+  File "<python-input-30>", line 1
+    orgname="kyndrl india
+            ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> orgname="kyndrl india"
+>>> message="""am indian
+... am  from telanga
+... am from hyderabad"""
+>>> print(message)
+am indian
+am  from telanga
+am from hyderabad
+>>> marks="90"
+>>> marks+5
+Traceback (most recent call last):
+  File "<python-input-35>", line 1, in <module>
+    marks+5
+    ~~~~~^~
+TypeError: can only concatenate str (not "int") to str
+>>> print("10"+"20")
+1020
+>>> 10+20
+30
+>>> marks1=int(marks)
+>>> type(marks1)
+<class 'int'>
+>>> type(marks)
+<class 'str'>
+>>> marks1+5
+95
+>>> int(12.325167)
+12
+>>> int(True)
+1
+>>> int(False)
+0
+>>> int("10")
+10
+>>> int("10.5")
+Traceback (most recent call last):
+  File "<python-input-46>", line 1, in <module>
+    int("10.5")
+    ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: '10.5'
+>>> int("ten")
+Traceback (most recent call last):
+  File "<python-input-47>", line 1, in <module>
+    int("ten")
+    ~~~^^^^^^^
+ValueError: invalid literal for int() with base 10: 'ten'
+>>> data=2+6j
+>>> type(data)
+<class 'complex'>
+>>> int(data)
+Traceback (most recent call last):
+  File "<python-input-50>", line 1, in <module>
+    int(data)
+    ~~~^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+>>> float(12)
+12.0
+>>> float(True)
+1.0
+>>> float(False)
+0.0
+>>> float("12")
+12.0
+>>> float("12.23")
+12.23
+>>> float("ten")
+Traceback (most recent call last):
+  File "<python-input-56>", line 1, in <module>
+    float("ten")
+    ~~~~~^^^^^^^
+ValueError: could not convert string to float: 'ten'
+>>> complex(10)
+(10+0j)
+>>> complex(10.5)
+(10.5+0j)
+>>> complex(True)
+(1+0j)
+>>> complex(False)
+0j
+>>> bool(0)
+False
+>>> bool(1)
+True
+>>> bool(10)
+True
+>>> bool(11)
+True
+>>> bool(19)
+True
+>>> bool(02)
+  File "<python-input-66>", line 1
+    bool(02)
+         ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+>>> bool(105)
+True
+>>> bool(10.5)
+True
+>>> bool(0.5)
+True
+>>> bool(0.0)
+False
+>>> bool(1+2j)
+True
+>>> bool(0+0j)
+False
+>>> bool("")
+False
+>>> bool("suresh")
+True
+>>> bool("naresh")
+True
+>>> str(10.2)
+'10.2'
+>>> str(10)
+'10'
+>>> str(10+2j)
+'(10+2j)'
+>>> str("True")
+'True'
+>>> str(True)
+'True'
+>>>
+
+
+int,float,str,complex,bool
+input,type,id,input,print
+
+* all the fundamental dt are immuttable  (fixed)
+														muttable (not fixed)
+PVM
+
+		name="kyndrl"
+		name1="kyndrl"  #it will not get new memory
+       name2="kyndrl" #
+	
+	
+	String ="@$#qweqwe@eqWW123"
+	indexing
+	slicing    :
+			[start index:end index-1:step]
+	python file		
+	.html,.cpp,.java
+		.py
+		conditional and looping -->control flow statements
+		
+		1
+		
+		
+		10000000
+			
+			if 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
