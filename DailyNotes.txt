@@ -305,10 +305,14 @@ PVM
 			
 			if 
 	
+	IDE-->VSCODE
 	
 	
-	
-	
+	PEP8
+			naming conventions
+					classname /interface name--->pascal case-->WelcomeIndia
+					variables /method names--->snake case in lowercase--->  add_of_two_numbers()
+			
 	
 	
 	
