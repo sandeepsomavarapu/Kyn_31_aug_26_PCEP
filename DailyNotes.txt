@@ -64,7 +64,7 @@ Where we can use python:
 Features:
 =========
 1)simple and easy to learn 
-2)freesource  and open source(jython,cpython,ruby)
+2)freesource  and open source(jython,cpython,ruby) python.org
 3)pltform independent 
 4)portable 
       2.523						2.533
@@ -72,7 +72,7 @@ Features:
 	windows 11         linux
 5)dynamically typed
 6)interpreted  
-7)rich library
+7)rich library            pandas,numpy,matplotlib,seaborn,keras,tensorflow         pip install pandas  numpy 
 						int a=123 static typed
 								a="123"
 
@@ -104,8 +104,8 @@ variables
 					String		name=sandeep 
 
 datatypes
-			int,float,bool,str,complex....fundamental datatypes
-			List,set,tuple,dict,frozenset--advanced DT
+			int,float,bool,str,complex....fundamental datatypes -->single value
+			List,set,tuple,dict,frozenset--advanced DT --->multiple value
 keywords--35
 
 ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', '
@@ -290,12 +290,17 @@ PVM
 	
 	
 	String ="@$#qweqwe@eqWW123"
-	indexing
+	indexing -->0
 	slicing    :
 			[start index:end index-1:step]
 	python file		
 	.html,.cpp,.java
 		.py
+		
+		execution
+
+		py filename.py
+
 		conditional and looping -->control flow statements
 		
 		1
@@ -313,9 +318,59 @@ PVM
 					classname /interface name--->pascal case-->WelcomeIndia
 					variables /method names--->snake case in lowercase--->  add_of_two_numbers()
 			
+String ="       "
+				'       '
+				'''      '''       multi lines
+				"""     """
+Operators:
+========
 	
+	symbol
 	
-	
+		1)Arithemetic Operators                      +,-,*,/,%,//,**
+		2)Relational Operators  or comparision operators    >,<,<=,>=,==,!=
+		3)logical operators    			and ,or ,not
+		4)bitwise operators             &,|,^,~,<<,>>
+		5)Assignment Operators      +=   ,-=,*=,/=,%=,//=,**= ,&=,|= 
 	
 
+and-->if both  arguments are True  then only the result True      True and True  -->True
+or-->if  atleast one argument is  True  then the result True         True or False -->True 
+not-->complement																							not False -->True
 
+			0-->False
+			non-zero means-->True
+			empty string always treated as False
+			
+			
+			Bitwise
+				&,|,^,~,<<,>>
+				
+				&-->if both bits are 1 then only result is 1 otherwise result is 0
+				|-->if atleast one bit is  1 then the result is 1 otherwise result is 0
+				^-->if bits are different then only result is 1 otherwise result 0
+				~-->bitwise component operator    1-->0   0-->1
+				
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
