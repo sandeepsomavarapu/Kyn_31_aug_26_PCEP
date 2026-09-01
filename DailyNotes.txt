@@ -350,8 +350,20 @@ not-->complement																							not False -->True
 				|-->if atleast one bit is  1 then the result is 1 otherwise result is 0
 				^-->if bits are different then only result is 1 otherwise result 0
 				~-->bitwise component operator    1-->0   0-->1
-				
-				
+				int,str,bool,complex,float-->immuttable
+				Advanced DT   -->List,Set,Dict,Tuple,Frozenset
+			5X
+			if we have requirement to store group of objects as single entity
+			List:
+			======
+			1)duplicates are allowed 
+			2)insertion order is preserved 
+			3)muttable
+			4)both homogeneous and heterogeneous objects 
+			5)[ ]
+			
+			
+			
 			
 			
 			
