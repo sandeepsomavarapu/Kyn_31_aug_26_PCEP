@@ -351,7 +351,8 @@ not-->complement																							not False -->True
 				^-->if bits are different then only result is 1 otherwise result 0
 				~-->bitwise component operator    1-->0   0-->1
 				int,str,bool,complex,float-->immuttable
-				Advanced DT   -->List,Set,Dict,Tuple,Frozenset
+			
+			Advanced DT   -->List,Set,Dict,Tuple,Frozenset
 			5X
 			if we have requirement to store group of objects as single entity
 			List:
@@ -361,19 +362,104 @@ not-->complement																							not False -->True
 			3)muttable
 			4)both homogeneous and heterogeneous objects 
 			5)[ ]
+			6)dynamic data when we are working will pic this list
+			
+			Tuple:it is immuttable version of list
+			====
+			1)duplicates are allowed 
+			2)insertion order is preserved 
+			3)immuttable(Fixed)
+			4)both homogeneous and heterogeneous objects 
+			5)()
+			6)performance wise and  fixed data when we have will this tuple
+				
+				>>> studs=('mahesh','ramesh','suresh','naresh','ravi','kumar','ramesh','akash')
+>>> type(studs)
+<class 'tuple'>
+>>> print(studs)
+('mahesh', 'ramesh', 'suresh', 'naresh', 'ravi', 'kumar', 'ramesh', 'akash')
+>>> studs.append('123')
+Traceback (most recent call last):
+  File "<python-input-3>", line 1, in <module>
+    studs.append('123')
+    ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'
+>>> studs.add('123')
+Traceback (most recent call last):
+  File "<python-input-4>", line 1, in <module>
+    studs.add('123')
+    ^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'add'
+>>> studs.remove('akash')
+Traceback (most recent call last):
+  File "<python-input-5>", line 1, in <module>
+    studs.remove('akash')
+    ^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'remove'
+>>> studs.index('ravi')
+4
+>>> studs.count('ramesh')
+			Set:
+			======A set in Python is an unordered, mutable collection of unique elements.
+			1)duplicates are not allowed 
+			2)insertion order is not preserved 
+			3)muttable
+			4)both homogeneous and heterogeneous objects 
+			5){},set()
+			6)dynamic data when we are working will pic this list
+					set={2,31,32,43,111,54,67,87,97}
+			Frozenset:
+			======A set in Python is an unordered, mutable collection of unique elements.
+			1)duplicates are not allowed 
+			2)insertion order is not preserved 
+			3)immuttable
+			4)both homogeneous and heterogeneous objects 
+			5)frozenset()
+		
+		Dict:				it is collection of items
+		=====		to store group of objects as key,value pair 
+				key,value--Item
+			
+			1)key must be unique             											1   sandeep
+			2)value can be duplicate													1     suresh       1 suresh
+			3)heterogeneous data is allowed 
+			4)muttable 
+			5){key:value,key:value}
+			
+			studs={123:'suresh',124:'ramesh'}
+>>> print(studs)
+{123: 'suresh', 124: 'ramesh'}
+>>> type(studs)
+<class 'dict'>
+>>> studs={123:'suresh',124:'ramesh',32:'kumar',89:'sandeep',124:'lokesh'}
+>>> print(studs)
+{123: 'suresh', 124: 'lokesh', 32: 'kumar', 89: 'sandeep'}
+>>> print(studs[123])
+suresh
+>>> studs[789]='ramesh'
+>>> print(studs)
+{123: 'suresh', 124: 'lokesh', 32: 'kumar', 89: 'sandeep', 789: 'ramesh'}
 			
 			
+	List,Tuple,Set,Dict,Frozenset
+	
+	Student
+			student id
+			name
+			age
+			courses 
+			marks
+			attendance
+			skills
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+	id      name    age    	course   marks
+	10       ravi      22       python    89
+	11      priya      21       python    59
+	12       akash      23       python    79
+	13       naresh      24       python    88
+	14       suresh      22       python    67
+	
+	
 			
 			
 			
