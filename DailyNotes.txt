@@ -459,10 +459,67 @@ suresh
 	13       naresh      24       python    88
 	14       suresh      22       python    67
 	
-	
+	function/method
+			print()
+			type,id,input......
 			
 			
+			def  fun_name():
+					...
+					....
+					......
+					.....
 			
+			
+			 10,20
+			 
+			 result=10+20
+			 print(result)
+			
+			20 30
+			sum=20+30
+			print(sum)
+			
+			def  add(a,b):
+			      result=a+b               code reusability
+				  
+			add(1,2)
+		add(2,3)			
+				  
+Exceptions	  
+==========				
+with out exception handling
+  
+				  1)System defined error message    
+				  2)abnormal termination
+				  
+				  1
+				  2.............stop the execution termination
+				  3
+				  4
+				  
+				  
+				  10000
+				  
+				  with exception handling
+				  1)user friendly error message
+				  2)normal termination
+				  
+				  try			-->risky code,error code
+				  except -->handling code
+				  finally
+				  raise 
+								exception hirarchie
+								BaseException
+										Exception      SystemExit
+								
+										ZeroDivisionError
+										TypeError
+										ValueError
+										NameError
+										AttributeError
+				  
+				  
 			
 			
 			
